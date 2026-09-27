@@ -14,14 +14,18 @@ Countdowns show the two largest units: `5d 08h`, `13h 53m`, then `42m 10s` in th
 **Always Show Full Time** on, they show every unit down to seconds: `5d 08h 53m 10s`.
 
 The times come from the world's own reset schedule, the same state the game checks before handing out new bounties and
-challenges, so they match what actually happens rather than your PC's clock:
-
-* dailies and the vendor restock happen every day at 05:00 UTC;
-* weeklies reset at 00:00 UTC, 7 days after the day of the last weekly reset. This is not a fixed weekday: it is
-  counted per world, from the day the last weekly reset actually happened.
+challenges, so they match what actually happens rather than your PC's clock.
 
 Each screen can be switched off with a checkbox at the end of **Options > Gameplay**, where Always Show Full Time is
 too.
+
+## Screenshots
+
+![Bounty board](docs/pics/nexus/board.jpg)
+![Quests menu](docs/pics/nexus/quests.jpg)
+![Vendor](docs/pics/nexus/shop.jpg)
+![Settings](docs/pics/nexus/settings.jpg)
+![Always Show Full Time](docs/pics/nexus/full_time.jpg)
 
 ## Install
 
