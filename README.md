@@ -27,7 +27,6 @@ too.
 ![Quests menu](docs/pics/nexus/quests.jpg)
 ![Vendor](docs/pics/nexus/shop.jpg)
 ![Settings](docs/pics/nexus/settings.jpg)
-![Always Show Full Time](docs/pics/nexus/full_time.jpg)
 
 ## Install
 
