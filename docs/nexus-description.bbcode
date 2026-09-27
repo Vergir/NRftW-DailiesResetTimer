@@ -1,0 +1,48 @@
+[size=5][b]Dailies Reset Timer[/b][/size]
+
+See at a glance when daily and weekly bounties and challenges reset, and when vendors restock.
+
+[size=4][b]Features[/b][/size]
+[list]
+[*][b]Bounty board and challenge screens:[/b] an hourglass and a countdown above the Daily and the Weekly column. The game has these timers built in but keeps them hidden.
+[*][b]Quests menu:[/b] on the Bounties and Challenges tabs, both countdowns above the list.
+[*][b]Vendors with limited stock:[/b] "Restocks in ..." above the vendor's items. The game shows no restock time at all.
+[/list]
+Countdowns show the two largest units: [i]5d 08h[/i], [i]13h 53m[/i], then [i]42m 10s[/i] in the last hour. With [b]Always Show Full Time[/b] on, they show every unit down to seconds: [i]5d 08h 53m 10s[/i].
+
+The times come from the world's own reset schedule, the same state the game checks before handing out new bounties and challenges, so they match what actually happens rather than your PC's clock:
+[list]
+[*]Dailies and the vendor restock happen every day at 05:00 UTC.
+[*]Weeklies reset at 00:00 UTC, 7 days after the day of the last weekly reset. This is not a fixed weekday: it is counted per world, from the day the last weekly reset actually happened.
+[/list]
+
+Each screen can be switched off with a checkbox at the end of [b]Options > Gameplay[/b], where Always Show Full Time is too.
+
+[size=4][b]Requirements[/b][/size]
+[list]
+[*][url=https://github.com/LavaGang/MelonLoader/releases]MelonLoader[/url] 0.7.3 or newer.
+[/list]
+
+[size=4][b]Installation[/b][/size]
+[list=1]
+[*]Install MelonLoader into the game folder and start the game once.
+[*]Extract the mod's zip into the game folder, so that [i]DailiesResetTimer.dll[/i] ends up in the [i]Mods[/i] folder.
+[/list]
+
+[b]Steam Deck / Linux (Proton):[/b]
+[list=1]
+[*]Copy the files from MelonLoader's [i]MelonLoader.x64.zip[/i] (the Windows build) into the game folder, and the mod into [i]Mods[/i].
+[*]In Steam, open the game's Properties > General > Launch Options and enter: [code]WINEDLLOVERRIDES="version=n,b" %command%[/code]
+[*]Start the game. On the first start MelonLoader installs the .NET runtime it needs by itself; that start takes a minute or two.
+[/list]
+
+[size=4][b]Compatibility[/b][/size]
+[list]
+[*]Tested with game build 29466 and MelonLoader 0.7.3 on Windows.
+[*]Read-only: nothing in the game simulation or your save is changed, so it does not affect co-op.
+[*]All settings are also in [i]UserData/MelonPreferences.cfg[/i], section [DailiesResetTimer].
+[/list]
+
+[size=4][b]Source[/b][/size]
+Source code, changelog and issue tracker: [url=https://github.com/Vergir/NRftW-DailiesResetTimer]https://github.com/Vergir/NRftW-DailiesResetTimer[/url]
+License: MIT
