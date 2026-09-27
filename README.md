@@ -1,3 +1,5 @@
+![Dailies Reset Timer](docs/pics/banner.jpg)
+
 # Dailies Reset Timer
 
 A [MelonLoader](https://github.com/LavaGang/MelonLoader) mod for **No Rest for the Wicked** that shows when daily and

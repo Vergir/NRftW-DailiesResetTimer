@@ -241,6 +241,35 @@ def header():
     save(img, "header.jpg")
 
 
+def banner():
+    """GitHub README banner, 1600x320 (5:1): the cover's title and timer cards in one strip."""
+    bw, bh = 1600, 320
+    bg = frame("board_short").filter(ImageFilter.GaussianBlur(6))
+    img = Image.eval(bg.crop((0, (H - round(W * bh / bw)) // 2, W, (H + round(W * bh / bw)) // 2)).resize((bw, bh), Image.LANCZOS),
+                     lambda v: int(v * 0.42))
+    d = ImageDraw.Draw(img)
+    d.text((bw // 2, 52), "Dailies Reset Timer", font=font(58), fill="white", anchor="mm")
+    d.text((bw // 2, 104), "Reset and restock countdowns for No Rest for the Wicked", font=font(24, light=True),
+           fill=GOLD, anchor="mm")
+    cards = [
+        ("Bounty board", zoom("board_short", BOARD_DAILY["board_short"], 1.45)),
+        ("Quests menu", zoom("quests_short", QUESTS_TIMER["quests_short"], 1.6)),
+        ("Vendors", zoom("shop_short", SHOP_TIMER["shop_short"], 1.6)),
+    ]
+    gap = 44
+    total = sum(c.width for _, c in cards) + gap * (len(cards) - 1)
+    x = (bw - total) // 2
+    ch = max(c.height for _, c in cards)
+    top = 138
+    for label, c in cards:
+        shadowed_paste(img, c, (x, top + (ch - c.height) // 2))
+        d.text((x + c.width // 2, top + ch + 22), label, font=font(20, light=True), fill=(200, 200, 200), anchor="mm")
+        x += c.width + gap
+    os.makedirs(OUT, exist_ok=True)
+    img.save(os.path.join(HERE, "banner.jpg"), quality=92)
+    print(f"{'banner.jpg (docs/pics)':28} {os.path.getsize(os.path.join(HERE, 'banner.jpg')) // 1024:5} KB")
+
+
 if __name__ == "__main__":
-    for f in (cover, board, quests, shop, settings, full_time, header):
+    for f in (cover, board, quests, shop, settings, full_time, header, banner):
         f()
