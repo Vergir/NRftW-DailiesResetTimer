@@ -3,7 +3,7 @@ using DailiesResetTimer;
 using MelonLoader;
 using UnityEngine;
 
-[assembly: MelonInfo(typeof(DailiesResetTimerMod), "Dailies Reset Timer", "1.0.0", "Vergir")]
+[assembly: MelonInfo(typeof(DailiesResetTimerMod), "Dailies Reset Timer", "1.0.0", "vergir")]
 [assembly: MelonGame("Moon Studios", "NoRestForTheWicked")]
 // MelonLoader would otherwise apply every [HarmonyPatch] itself, twice with our PatchAll and even when Enabled = false.
 [assembly: HarmonyDontPatchAll]
