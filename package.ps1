@@ -1,5 +1,5 @@
 # Builds the release zip into dist/. The file name carries no version, so
-# https://github.com/Vergir/NRftW-DailiesResetTimer/releases/latest/download/DailiesResetTimer.zip always points at the newest release.
+# https://github.com/vergir/NRftW-DailiesResetTimer/releases/latest/download/DailiesResetTimer.zip always points at the newest release.
 #   DailiesResetTimer.zip   Mods/DailiesResetTimer.dll, README.md, LICENSE, CHANGELOG.md - extract into the game folder.
 # Needs MelonLoader's generated assemblies in the game folder (see README > Build).
 # Usage: pwsh ./package.ps1 [-GameDir <path>]

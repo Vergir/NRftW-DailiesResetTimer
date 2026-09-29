@@ -33,7 +33,7 @@ too.
 1. Install [MelonLoader](https://github.com/LavaGang/MelonLoader/releases) **0.7.3** or newer into the game
    (`...\steamapps\common\NoRestForTheWicked`) and start the game once.
 2. Put `DailiesResetTimer.dll` into the game's `Mods` folder (the
-   [release zip](https://github.com/Vergir/NRftW-DailiesResetTimer/releases/latest) already has that layout: extract it
+   [release zip](https://github.com/vergir/NRftW-DailiesResetTimer/releases/latest) already has that layout: extract it
    into the game folder).
 
 ### Steam Deck / Linux (Proton)
