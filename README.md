@@ -5,6 +5,8 @@
 A [MelonLoader](https://github.com/LavaGang/MelonLoader) mod for **No Rest for the Wicked** that shows when daily and
 weekly bounties and challenges reset, and when vendors restock.
 
+Download: [Nexus Mods](https://www.nexusmods.com/norestforthewicked/mods/104) · [GitHub releases](https://github.com/vergir/NRftW-DailiesResetTimer/releases/latest)
+
 ## Features
 
 * **Bounty board and challenge screens**: an hourglass and a countdown above the Daily and the Weekly column. The game
